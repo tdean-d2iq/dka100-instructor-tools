@@ -44,7 +44,7 @@ chmod 755 dka100-instructor-tools/*.sh
 
 ***You should refresh your AWS credentials at this point, just in case.***
 
-#### Let's deploy the student clusters!
+### Let's deploy the student clusters!
 
 The `setup_dka100.sh` script takes up to two arguments.  The *first* argument is the number of **students/clusters** you wish to deploy, which can be a value of `1` or greater.  The *second* argument is for an `instructor` tag, which you can put any string into.  This will assist you if you need to locate resources based on that tag.
 ```
@@ -62,7 +62,7 @@ Use the method you prefer.
 
 ***You should refresh your AWS credentials at this point, just in case.***
 
-#### Let's destroy the student clusters!
+### Let's destroy the student clusters!
 
 ***Make sure you are in the the directory with all the class materials, where all the `studentX` directories reside!***
 
