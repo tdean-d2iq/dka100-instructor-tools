@@ -11,7 +11,7 @@
 numstudents=$1
 instructor=$2
 course=dka100
-branch=master
+branch=training
 
 # Let's go!
 echo "Creating clusters for "$numstudents" students..."
