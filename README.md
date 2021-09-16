@@ -62,7 +62,7 @@ Use the method you prefer.
 
 ***You should refresh your AWS credentials at this point, just in case.***
 
-####Let's destroy the student clusters!
+#### Let's destroy the student clusters!
 
 ***Make sure you are in the the directory with all the class materials, where all the `studentX` directories reside!***
 
