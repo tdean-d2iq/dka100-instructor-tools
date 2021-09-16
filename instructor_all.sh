@@ -2,7 +2,7 @@
 #
 # Tom Dean - D2iQ
 # Created : 9/15/2021
-# Last Updated : 9/15/2021
+# Last Updated : 9/17/2021
 # Script to deploy DKP cluster, EBS SCSI Provisioner and Kommander
 # FOR INSTRUCTORS ONLY!  ;)
 # This script takes TWO arguments:
@@ -13,7 +13,6 @@
 student=$1
 control_plane=$2
 version=v2.0.0
-export KUBECONFIG=$(pwd)/admin.conf
 
 # Deploy the Build Server
 cd ~/konvoy-image-builder
