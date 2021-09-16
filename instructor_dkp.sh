@@ -2,7 +2,7 @@
 #
 # Tom Dean - D2iQ
 # Created : 9/15/2021
-# Last Updated : 9/15/2021
+# Last Updated : 9/17/2021
 # Script to deploy DKP cluster
 # FOR INSTRUCTORS ONLY!  ;)
 # This script takes TWO arguments:
