@@ -11,6 +11,7 @@
 numstudents=$1
 instructor=$2
 course=dka100
+branch=master
 
 # Let's go!
 echo "Creating clusters for "$numstudents" students..."
@@ -23,7 +24,7 @@ echo
 
 # Create a directory for this student, and clone Arvind's repo to it
 mkdir student$i
-git clone https://github.com/arbhoj/cluster-api-provider-preprovisioned-field.git student$i
+git clone --branch $branch https://github.com/arbhoj/cluster-api-provider-preprovisioned-field.git student$i
 echo
 
 # Set some variables inside the loop
