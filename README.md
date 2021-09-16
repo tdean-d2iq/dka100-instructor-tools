@@ -97,4 +97,6 @@ Run the scripts from the `centos` user's home directory.  For example, to deploy
 ./dka100-instructor-tools/instructor_all.sh student1 tf-lb-20210916224237772100000007-589772466.us-west-2.elb.amazonaws.com
 ```
 
+The scripts are well-documented, so if you're curious, feel free to look "under the hood" to see what's going on or how they work.
+
 ### Enjoy, and good luck!
