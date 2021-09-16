@@ -8,6 +8,7 @@
 # This script takes NO arguments!
 
 # Let's define some variables!
+export KUBECONFIG=$(pwd)/admin.conf
 version=v2.0.0
 
 # Download Kommander!
