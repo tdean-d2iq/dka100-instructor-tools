@@ -34,12 +34,12 @@ chmod 600 admin.conf
 export KUBECONFIG=$(pwd)/admin.conf
 watch -n 1 kubectl get nodes
 
-# Deploy 'awsebscsiprovisioner'
-helm repo add d2iq-stable https://mesosphere.github.io/charts/stable
-helm repo update
-helm install awsebscsiprovisioner d2iq-stable/awsebscsiprovisioner --values awsebscsiprovisioner_values.yaml
-sleep 30
-kubectl patch sc localvolumeprovisioner -p '{"metadata":{"annotations":{"storageclass.kubernetes.io/is-default-class":"false"}}}'
+## Deploy 'awsebscsiprovisioner'
+#helm repo add d2iq-stable https://mesosphere.github.io/charts/stable
+#helm repo update
+#helm install awsebscsiprovisioner d2iq-stable/awsebscsiprovisioner --values awsebscsiprovisioner_values.yaml
+#sleep 30
+#kubectl patch sc localvolumeprovisioner -p '{"metadata":{"annotations":{"storageclass.kubernetes.io/is-default-class":"false"}}}'
 
 # Download Kommander!
 wget "https://mesosphere.github.io/kommander/charts/kommander-bootstrap-${version}.tgz"
