@@ -92,9 +92,9 @@ git clone https://github.com/tdean-d2iq/dka100-instructor-tools.git
 chmod 755 dka100-instructor-tools/*.sh
 ```
 
-Run the scripts from the `centos` user's home directory.  For example, to deploy *everything*, from the `student1` environment, with a load balancer of ``, run:
+Run the scripts from the `centos` user's home directory.  For example, to deploy *everything*, from the `student1` environment, with a load balancer of `tf-lb-20210916224237772100000007-589772466.us-west-2.elb.amazonaws.com`, run:
 ```
-./dka100-instructor-tools/instructor_all.sh student1 
+./dka100-instructor-tools/instructor_all.sh student1 tf-lb-20210916224237772100000007-589772466.us-west-2.elb.amazonaws.com
 ```
 
 ### Enjoy!
