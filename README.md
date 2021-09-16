@@ -88,6 +88,9 @@ In order to use the scripts, clone them to your registry server.
 ```
 git clone https://github.com/tdean-d2iq/dka100-instructor-tools.git
 ```
+```
+chmod 755 dka100-instructor-tools/*.sh
+```
 
 Run the scripts from the `centos` user's home directory.  For example, to deploy *everything*, from the `student1` environment, with a load balancer of ``, run:
 ```
