@@ -64,7 +64,10 @@ Use the method you prefer.
 
 ### Let's destroy the student clusters!
 
-Run the `teardown_dka100.sh` script.  No arguments are necessary.  The script will count the number of student directories and will handle the process.
+Run the `teardown_dka100.sh` script.  No arguments are necessary.  The script will count the number of student directories and will handle the process.  Again, ***make sure you are in the directory with the `studentX` directories in it!***
+```
+./dka100-instructor-tools/teardown_dka100.sh
+```
 
 When you are sure you no longer need the student directories, you can either remove all the student directories, or remove the directory with all the class materials, which contains the student directories.
 
