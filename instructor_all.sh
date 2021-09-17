@@ -14,6 +14,8 @@ student=$1
 control_plane=$2
 version=v2.0.0
 class=dka100
+cp_replicas=1
+wk_replicas=4
 
 # Deploy the Build Server
 cd ~/konvoy-image-builder
@@ -25,7 +27,7 @@ cd ~
 ./dkp create bootstrap
 kubectl create secret generic $student-$class-ssh-key --from-file=ssh-privatekey=/home/centos/$student-$class
 kubectl apply -f /home/centos/provision/$student-$class-preprovisioned_inventory.yaml
-./dkp create cluster preprovisioned --cluster-name $student-$class --control-plane-endpoint-host $control_plane --os-hint=flatcar --control-plane-replicas 1 --worker-replicas 4 --dry-run -o yaml > deploy-dkp-$student-$class.yaml
+./dkp create cluster preprovisioned --cluster-name $student-$class --control-plane-endpoint-host $control_plane --os-hint=flatcar --control-plane-replicas $cp_replicas --worker-replicas $wk_replicas --dry-run -o yaml > deploy-dkp-$student-$class.yaml
 sed -i 's/cloud-provider\:\ \"\"/cloud-provider\:\ \"aws\"/' deploy-dkp-$student-$class.yaml
 kubectl apply -f deploy-dkp-$student-$class.yaml
 watch -n 1 ./dkp describe cluster -c $student-$class
