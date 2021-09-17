@@ -83,9 +83,7 @@ watch -n 1 kubectl get nodes
 ```
 Use `CTRL-C` to exit the command once all nodes are in the `Ready` state.
 
-## Optional: Deploy `awsebscsiprovisioner`
-
-***This doesn't work yet as the YAML file is missing: Error: open awsebscsiprovisioner_values.yaml: no such file or directory***
+## Deploy the `awsebscsiprovisioner`
 
 Run the following commands:
 ```
@@ -102,8 +100,6 @@ kubectl patch sc localvolumeprovisioner -p '{"metadata":{"annotations":{"storage
 ```
 
 ## Deploy Kommander
-
-***This doesn't work either, fails with: Error: failed to download "kommander-bootstrap-v2.0.0.tgz" at version "v2.0.0" (hint: running `helm repo update` may help).  Tried a `helm repo update`.  No dice.***
 
 Run the following commands:
 ```
