@@ -2,8 +2,8 @@
 #
 # Tom Dean - D2iQ
 # Created : 9/14/2021
-# Last Updated : 9/14/2021
-# Wrapper script to stand up DKP cluster(s) for DKA100 class
+# Last Updated : 9/17/2021
+# Wrapper script to stand up DKP cluster(s) for DKA100 class - AWS East Region
 # Uses Arvind Bhoj's arbhoj/cluster-api-provider-preprovisioned-field project
 # GitHub URL : https://github.com/arbhoj/cluster-api-provider-preprovisioned-field
 
@@ -51,10 +51,10 @@ tags = {
   "courseadmin" : "$USER"
   "company" : "D2iQ"
 }
-aws_region = "us-west-2"
-aws_availability_zones = ["us-west-2c"]
-node_ami = "ami-0e6702240b9797e12"
-registry_ami = "ami-0686851c4e7b1a8e1"
+aws_region = "us-east-1"
+aws_availability_zones = ["us-east-1c"]
+node_ami = "ami-048e383eb95db98c4"
+registry_ami = "ami-00e87074e52e6c9f9"
 ansible_python_interpreter = "/opt/bin/python"
 ssh_username = "core"
 create_iam_instance_profile = true
