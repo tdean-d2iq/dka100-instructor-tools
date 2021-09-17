@@ -98,6 +98,7 @@ Run the scripts from the `centos` user's home directory.  For example, to deploy
 ```
 ./dka100-instructor-tools/instructor_all.sh student1 tf-lb-20210916224237772100000007-589772466.us-west-2.elb.amazonaws.com
 ```
+If you want to deploy in stages, run in the following order: *DKP --> EBS --> Kommander*
 
 The scripts are well-documented, so if you're curious, feel free to look "under the hood" to see what's going on or how they work.
 
