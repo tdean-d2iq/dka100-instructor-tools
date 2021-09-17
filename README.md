@@ -49,12 +49,12 @@ chmod 755 dka100-instructor-tools/*.sh
 
 The `setup_dka100.sh` script takes up to two arguments.  The *first* argument is the number of **students/clusters** you wish to deploy, which can be a value of `1` or greater.  The *second* argument is for an `instructor` tag, which you can put any string into.  This will assist you if you need to locate resources based on that tag.
 ```
-./dka100-instructor-tools/setup_dka100.sh 3 tdean
+./dka100-instructor-tools/setup_dka100_east.sh 3 tdean
 ```
 
 The `setup_dka100.sh` script can be run with no arguments, which will give us a *single* cluster, without an *instructor* tag.
 ```
-./dka100-instructor-tools/setup_dka100.sh
+./dka100-instructor-tools/setup_dka100_west.sh
 ```
 
 Use the method you prefer.
