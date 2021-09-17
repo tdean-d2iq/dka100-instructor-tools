@@ -7,6 +7,11 @@
 The DKA100 Instructor Tools kit contains scripts for deploying DKA100 student lab environments for the DKA100 class.  The kit also can deploy a DKP/Kommander environment in an automated fashion.  This can be handy if you need to catch up with students, have a student with a failed installation, etc.
 
 The following scripts are provided:
+- `setup_dka100_[east/west].sh` : these scripts create the DKA100 student lab environments in AWS - ***USE ONE ONLY***
+    - Use the East script for the `us-east-1` region, the West script for `us-west-2`
+    - First argument: number of clusters/students (optional - defaults to 1)
+    - Second argument: instuctor userid (optional)
+- `teardown_dka100.sh` : this script is for cleaning up the DKA100 student lab environments
 - `instructor_dkp.sh` : this script is for automated deployment of the DKP environment
     - First argument: studentX
     - Second argument: ELB DNS
@@ -15,10 +20,6 @@ The following scripts are provided:
 - `instructor_all.sh` : this script does it all: DKP, EBS and Kommander
     - First argument: studentX
     - Second argument: ELB DNS
-- `setup_dka100.sh` : this script creates the DKA100 student lab environments in AWS
-    - First argument: number of clusters/students (optional - defaults to 1)
-    - Second argument: instuctor userid (optional)
-- `teardown_dka100.sh` : this script is for cleaning up the DKA100 student lab environments
 
 ## Checking Out the DKA100 Instructor Tools Repository from GitHub
 
