@@ -60,11 +60,9 @@ Use the method you prefer.
 
 ## Tearing Down the Student Clusters
 
-***You should refresh your AWS credentials at this point, just in case.***
+***You should refresh your AWS credentials at this point, just in case.  Make sure you are in the the directory with all the class materials, where all the `studentX` directories reside!***
 
 ### Let's destroy the student clusters!
-
-***Make sure you are in the the directory with all the class materials, where all the `studentX` directories reside!***
 
 Run the `teardown_dka100.sh` script.  No arguments are necessary.  The script will count the number of student directories and will handle the process.
 
