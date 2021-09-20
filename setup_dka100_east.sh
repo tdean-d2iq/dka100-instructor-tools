@@ -2,7 +2,7 @@
 #
 # Tom Dean - D2iQ
 # Created : 9/14/2021
-# Last Updated : 9/17/2021
+# Last Updated : 9/20/2021
 # Wrapper script to stand up DKP cluster(s) for DKA100 class - AWS East Region
 # Uses Arvind Bhoj's arbhoj/cluster-api-provider-preprovisioned-field project
 # GitHub URL : https://github.com/arbhoj/cluster-api-provider-preprovisioned-field
@@ -82,6 +82,19 @@ echo
 cd ..
 
 # Let's do it again or GTFO!
+done
+
+# Create zip files for each student that contain documents, SSH keys, etc.
+# Create directory to hold zip files
+mkdir $course_assets
+
+# Create zip files
+for i in `seq 1 $numstudents`
+do echo "Creating zipfile for student"$i"..."
+echo
+zip -r $course_assets/student$i.zip student$i/student1-$course student$i/student1-$course.pub student$i/student$i\_output.txt
+
+# Create the next file or GTFO!
 done
 
 # Now we're done, send a clean exit code
