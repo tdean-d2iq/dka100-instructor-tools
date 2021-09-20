@@ -21,6 +21,16 @@ The following scripts are provided:
     - First argument: studentX
     - Second argument: ELB DNS
 
+You will need to download the [DKP Release](https://github.com/mesosphere/konvoy2/releases) and extract the DKP binary directly under the $HOME dir on the machine you are bootstrapping the student lab environments from (in my case, my Mac).
+
+Additionally, you will need the following on your lab deployment machine:
+- A recent version of Terraform
+- The AWS CLI Utilities
+- The `maws` utility
+- A recent version of Ansible
+
+### Let's give it a go!
+
 ## Checking Out the DKA100 Instructor Tools Repository from GitHub
 
 First, I would recommend creating a new directory to contain all the class materials.
