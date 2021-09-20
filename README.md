@@ -61,7 +61,9 @@ Use the method you prefer.
 
 ## Tearing Down the Student Clusters
 
-***You should refresh your AWS credentials at this point, just in case.  Make sure you are in the the directory with all the class materials, where all the `studentX` directories reside!***
+***Refresh your AWS credentials at this point!  If the process hangs, it's probably due to AWS credentials.***
+
+***Make sure you are in the the directory with all the class materials, where all the `studentX` directories reside!***
 
 ### Let's destroy the student clusters!
 
