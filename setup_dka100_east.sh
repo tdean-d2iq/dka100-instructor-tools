@@ -86,13 +86,13 @@ done
 
 # Create zip files for each student that contain documents, SSH keys, etc.
 # Create directory to hold zip files
-mkdir $course_assets
+mkdir $course\_student\_assets
 
 # Create zip files
 for i in `seq 1 $numstudents`
 do echo "Creating zipfile for student"$i"..."
 echo
-zip -r $course_assets/student$i.zip student$i/student1-$course student$i/student1-$course.pub student$i/student$i\_output.txt
+zip -r $course\_student\_assets/student$i.zip student$i/student1-$course student$i/student1-$course.pub student$i/student$i\_output.txt
 
 # Create the next file or GTFO!
 done
