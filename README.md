@@ -43,7 +43,7 @@ chmod 755 dka100-instructor-tools/*.sh
 
 ## Standing Up Student Clusters
 
-***You should refresh your AWS credentials at this point, just in case.***
+***Refresh your AWS credentials at this point!  If the process hangs, it's probably due to AWS credentials.***
 
 ### Let's deploy the student clusters!
 
