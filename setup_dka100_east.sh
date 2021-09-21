@@ -86,8 +86,12 @@ cd ..
 
 # Let's do it again or GTFO!
 done
+echo
 
 # Create zip files for each student that contain documents, SSH keys, etc.
+echo "Creating zipfiles for students..."
+echo
+
 # Create directory to hold zip files
 mkdir $course\_student\_assets
 
