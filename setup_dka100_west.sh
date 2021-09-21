@@ -12,13 +12,15 @@ numstudents=$1
 instructor=$2
 course=dka100
 branch=training
+startnum=0
+expiration=100h
 
 # Let's go!
 echo "Creating clusters for "$numstudents" students..."
 echo
 
 # Let's build a cluster for each student!
-for i in `seq 1 $numstudents`
+for i in `seq $startnum $numstudents`
 do echo "Creating cluster for student"$i"..."
 echo
 
@@ -44,7 +46,7 @@ echo
 cat <<EOF > student$i.tfvars
 tags = {
   "owner" : "student$i",
-  "expiration" : "100h"
+  "expiration" : "$expiration"
   "instructor" : "$instructor"
   "student" : "student$i"
   "course" : "$course"
@@ -103,6 +105,10 @@ zip -r $course\_student\_assets/student$i.zip student$i/student$i-$course studen
 
 # Create the next file or GTFO!
 done
+echo
+
+# Create a zipfile from the $course_student_assets directory
+zip -r $course\_student\_assets.zip $course\_student\_assets
 
 # Now we're done, send a clean exit code
 exit 0
