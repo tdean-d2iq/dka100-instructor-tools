@@ -77,14 +77,21 @@ terraform -chdir=provision apply -auto-approve -var-file ../student$i.tfvars
 # Let's dump the Terraform output to a text file in the student's directory for referemce
 terraform -chdir=provision output > student$i\_output.txt
 
+# Let's pause for 30 seconds
+sleep 30
+
 # Back out of this student's directory so we can do it all again, or wind up where we started
 echo
 cd ..
 
 # Let's do it again or GTFO!
 done
+echo
 
 # Create zip files for each student that contain documents, SSH keys, etc.
+echo "Creating zipfiles for students..."
+echo
+
 # Create directory to hold zip files
 mkdir $course\_student\_assets
 
@@ -92,7 +99,7 @@ mkdir $course\_student\_assets
 for i in `seq 1 $numstudents`
 do echo "Creating zipfile for student"$i"..."
 echo
-zip -r $course\_student\_assets/student$i.zip student$i/student1-$course student$i/student1-$course.pub student$i/student$i\_output.txt
+zip -r $course\_student\_assets/student$i.zip student$i/student$i-$course student$i/student$i-$course.pub student$i/student$i\_output.txt
 
 # Create the next file or GTFO!
 done
