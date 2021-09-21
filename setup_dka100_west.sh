@@ -103,6 +103,10 @@ zip -r $course\_student\_assets/student$i.zip student$i/student$i-$course studen
 
 # Create the next file or GTFO!
 done
+echo
+
+# Create a zipfile from the $course_student_assets directory
+zip -r $course\_student\_assets.zip $course\_student\_assets
 
 # Now we're done, send a clean exit code
 exit 0
