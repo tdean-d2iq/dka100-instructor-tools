@@ -87,9 +87,6 @@ cd ..
 # Let's do it again or GTFO!
 done
 
-# Let's pause for 60 seconds
-sleep 60
-
 # Create zip files for each student that contain documents, SSH keys, etc.
 # Create directory to hold zip files
 mkdir $course\_student\_assets
