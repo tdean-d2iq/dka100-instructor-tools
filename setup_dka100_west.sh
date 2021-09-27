@@ -12,7 +12,7 @@ numstudents=$1
 instructor=$2
 course=dka100
 branch=training
-startnum=0
+startnum=1
 expiration=100h
 
 # Let's go!
